@@ -16,7 +16,7 @@
   <application android:label="@string/app_name" >
     <activity
       android:label="@string/app_name"
-      android:name="com.sqisland.android.protected_provider.module_baby_animals.MainActivity" >
+      android:name=".MainActivity" >
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -25,7 +25,7 @@
 
     <provider
       android:authorities="com.sqisland.android.protected_provider.module_baby_animals.ModuleContentProvider"
-      android:name="com.sqisland.android.protected_provider.module_baby_animals.ModuleContentProvider"
+      android:name=".ModuleContentProvider"
       android:label="@string/app_label"
       android:exported="true"
       android:permission="com.sqisland.android.protected_provider.ACCESS_DATA" />
