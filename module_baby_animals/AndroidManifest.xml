@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.sqisland.android.protected_provider.module_baby_animals"
+  android:versionCode="1"
+  android:versionName="1.0" >
+
+  <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="12" />
+
+  <supports-screens
+    android:largeScreens="true"
+    android:xlargeScreens="true" />
+
+  <permission android:name="com.sqisland.android.protected_provider.ACCESS_DATA"
+    android:protectionLevel="signature" />
+
+  <application android:label="@string/app_name" >
+    <activity
+      android:label="@string/app_name"
+      android:name="com.sqisland.android.protected_provider.module_baby_animals.MainActivity" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <provider
+      android:authorities="com.sqisland.android.protected_provider.module_baby_animals.ModuleContentProvider"
+      android:name="com.sqisland.android.protected_provider.module_baby_animals.ModuleContentProvider"
+      android:label="@string/app_label"
+      android:exported="true"
+      android:permission="com.sqisland.android.protected_provider.ACCESS_DATA" />
+  </application>
+</manifest>

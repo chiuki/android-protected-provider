@@ -1,0 +1,4 @@
+1	Cat	Kitten
+2	Dog	Puppy
+3	Bear	Cub
+4	Deer	Fawn

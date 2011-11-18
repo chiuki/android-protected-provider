@@ -1,0 +1,4 @@
+To create the database file:
+
+* Put your data in a tab-delimited file called 'items.txt'
+* Run this: cat create_db.sql | sqlite3 res/raw/database.db

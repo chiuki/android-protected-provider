@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Protected Provider: Module Baby Animals</string>
+  <string name="app_label">Baby Animals</string>
+  <string name="description">
+    This package has a ContentProvider only accessible by applications
+    signed with the same signature. Compile the main app with matching and
+    non-matching signatures to see it in action.
+  </string>
+  <string name="launch_main">Launch main app</string>
+</resources>
